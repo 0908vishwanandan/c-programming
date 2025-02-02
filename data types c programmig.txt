@@ -1,0 +1,108 @@
+1.There are 15 chairs in one row and 18 chairs in another row. How many chairs are there in total?
+#include <stdio.h>
+
+int main() {
+    int row1 = 15;
+    int row2 = 18;
+    int totalChairs = row1 + row2;
+
+    printf("Total chairs: %d\n", totalChairs);
+    return 0;
+}
+2.There are 23 passengers on  a bus. At the next stop, 12 more passengers got on. How many passengers are now on the bus?
+#include <stdio.h>
+
+int main() {
+    int initial_passengers = 23;
+    int new_passengers = 12;
+    int total_passengers = initial_passengers + new_passengers;
+
+    printf("Total passengers on the bus: %d\n", total_passengers);
+    return 0;
+}
+3.A library has 345 fiction bonds and 278 non fiction book. How many books are there in total?
+
+
+#include <stdio.h>
+
+int main() {
+    int fiction_books = 345;
+    int non_fiction_books = 278;
+    int total_books = fiction_books + non_fiction_books;
+
+    printf("Total books in the library: %d\n", total_books);
+    return 0;
+}
+
+4.Imagine you're at a provision store, and you need to buy different products like rice, sugar, and oil. Each product has a price and quantity, and the store applies a 5% tax on the total purchase.
+#include <stdio.h>
+
+int main() {
+    float rice_price, sugar_price, oil_price;
+    int rice_quantity, sugar_quantity, oil_quantity;
+    float total, tax, final_amount;
+
+    printf("Enter the price of rice: ");
+    scanf("%f", &rice_price);
+    printf("Enter the quantity of rice: ");
+    scanf("%d", &rice_quantity);
+
+    printf("Enter the price of sugar: ");
+    scanf("%f", &sugar_price);
+    printf("Enter the quantity of sugar: ");
+    scanf("%d", &sugar_quantity);
+
+    printf("Enter the price of oil: ");
+    scanf("%f", &oil_price);
+    printf("Enter the quantity of oil: ");
+    scanf("%d", &oil_quantity);
+
+    total = (rice_price * rice_quantity) + (sugar_price * sugar_quantity) + (oil_price * oil_quantity);
+    tax = total * 0.05;
+    final_amount = total + tax;
+
+    printf("Total amount before tax: %.2f\n", total);
+    printf("Tax: %.2f\n", tax);
+    printf("Final amount to be paid: %.2f\n", final_amount);
+
+    return 0;
+}
+5.You are at an electronics store purchasing different gadgets like a laptop, headphones, and a phone charger. Each item has a price and quantity, and there is a 10% tax added to the total amount at checkout.
+
+#include <stdio.h>
+
+int main() {
+    // Prices of the items
+    float laptop_price = 800.0;
+    float headphones_price = 150.0;
+    float charger_price = 20.0;
+
+    // Quantities of the items
+    int laptop_quantity = 1;
+    int headphones_quantity = 1;
+    int charger_quantity = 2;
+
+    // Calculate subtotal for each item
+    float laptop_total = laptop_price * laptop_quantity;
+    float headphones_total = headphones_price * headphones_quantity;
+    float charger_total = charger_price * charger_quantity;
+
+    // Calculate the total before tax
+    float subtotal = laptop_total + headphones_total + charger_total;
+
+    // Calculate the tax (10% of subtotal)
+    float tax = subtotal * 0.10;
+
+    // Calculate the final total
+    float total = subtotal + tax;
+
+    // Display the results
+    printf("Laptop: $%.2f x %d = $%.2f\n", laptop_price, laptop_quantity, laptop_total);
+    printf("Headphones: $%.2f x %d = $%.2f\n", headphones_price, headphones_quantity, headphones_total);
+    printf("Phone Charger: $%.2f x %d = $%.2f\n", charger_price, charger_quantity, charger_total);
+    printf("Subtotal: $%.2f\n", subtotal);
+    printf("Tax (10%%): $%.2f\n", tax);
+    printf("Total: $%.2f\n", total);
+
+    return 0;
+}
